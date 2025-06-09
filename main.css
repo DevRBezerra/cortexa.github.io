@@ -7,3 +7,127 @@
     object-position:0 80%;
     height: 400px;
 }
+
+
+.nunito-sans-<uniquifier> {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+/* Estilos Gerais */
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(45deg, #000000, #1a1a1a);
+    padding-top: 80px;
+}
+
+/* Cards */
+.card {
+    transition: transform 0.3s ease;
+    border: 1px solid #ffc107;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Botões */
+.btn-warning {
+    background-color: #ffc107;
+    border: none;
+    color: #000;
+    font-weight: 600;
+    padding: 12px 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-warning:hover {
+    background-color: #ffca2c;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 193, 7, 0.3);
+}
+
+/* Navegação */
+.navbar {
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    padding: 20px 0;
+}
+
+.navbar-logo {
+    max-height: 150px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.navbar-logo:hover {
+    transform: scale(1.05);
+}
+
+.nav-link {
+    font-weight: 600;
+    padding: 0.5rem 1rem !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffca2c !important;
+}
+
+/* Seções */
+section {
+    padding: 80px 0;
+}
+
+/* Animações */
+[data-aos] {
+    pointer-events: none;
+}
+
+[data-aos].aos-animate {
+    pointer-events: auto;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+        padding-top: 120px;
+    }
+    
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    section {
+        padding: 40px 0;
+    }
+
+    .navbar-logo {
+        max-height: 120px;
+    }
+}
+
+/* Efeitos de Hover */
+.text-warning {
+    transition: color 0.3s ease;
+}
+
+.text-warning:hover {
+    color: #ffca2c !important;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid rgba(255, 193, 7, 0.1);
+}
