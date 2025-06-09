@@ -1,0 +1,9 @@
+.logo {
+    width: 250px;
+    height: 250px;    
+}
+.imagem-carrossel{
+    object-fit: cover;
+    object-position:0 80%;
+    height: 400px;
+}
